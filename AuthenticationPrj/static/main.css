@@ -1,0 +1,20 @@
+.mynav
+{
+list-style-type:none;
+background-color:LightGray;
+overflow: hidden;
+}
+
+.m1
+{
+float:left;
+padding:5px 15px 5px 15px;
+text-decoration: none;
+text-color:Blue;
+}
+
+li a
+{
+color: Black;
+text-decoration: none;
+}

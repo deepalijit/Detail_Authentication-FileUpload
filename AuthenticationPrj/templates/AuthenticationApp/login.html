@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  <title>Log in Page</title>
+{% endblock %}
+
+{% block content %}
+  <br>
+
+  <br>
+  <div class="container">
+    <h2 style="text-align:center">Log in here.....</h2>
+    <br>
+    <form method="post" class="jumbotron">
+      {% csrf_token %}
+      <lable for="uname">Enter Username: </lable>
+      <input type="text" id="uname" name="uname" class="form-control">
+      <br>
+      <lable for="pword">Enter Password</lable>
+      <input type="password" id="pword" name="pword" class="form-control">
+      <br>
+      <button class="btn btn-success">Submit</button>
+      <br><br>
+      <a href="{% url 'password_reset' %}">Forgot Password??</a>
+    </form>
+  </div>
+
+{% endblock %}
